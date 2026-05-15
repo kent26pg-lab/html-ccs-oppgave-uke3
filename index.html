@@ -6,45 +6,65 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body id="top">
     <header>
       <div class="header">
-        <a href="" class="header-text">placeholder</a>
-        <a href="" class="header-text">placeholder</a>
-        <img src="icons/rocket3.png" alt="icon" class="header-icon" />
+        <a href="#scroll1" class="header-text"
+          >Namesake and potential for life</a
+        >
+        <a href="#scroll2" class="header-text">Video</a>
+        <a href="#top"
+          ><img src="icons/rocket3.png" alt="icon" class="header-icon" />
+        </a>
         <a href="" class="header-text">placeholder</a>
         <a href="" class="header-text">placeholder</a>
       </div>
     </header>
 
     <section class="hero">
-      <div class="hero-content">
+      <div id="scroll1" class="hero-content">
         <h1>Uranus</h1>
         <p>Scroll down for more info</p>
       </div>
     </section>
-  <section class="main-content">
-  <div class="content-container">
-    <h2>Namesake and potential for life</h2>
-    
-    <div class="info-wrapper">
-      <div class="infobox">
-        <p>
-          William Herschel tried unsuccessfully to name his discovery Georgium
-          Sidus after King George III. Instead, the planet was named for Uranus,
-          the Greek god of the sky, as suggested by Johann Bode.
-        </p>
-      </div>
+    <section class="main-content">
+      <div class="content-container">
+        <h2>Namesake and potential for life</h2>
 
-      <div class="infobox">
-        <p>
-          Uranus' environment is not conducive to life as we know it. The
-          temperatures, pressures, and materials that characterize this planet
-          are most likely too extreme and volatile for organisms to adapt to.
-        </p>
+        <div class="info-wrapper">
+          <div class="infobox">
+            <p>
+              William Herschel tried unsuccessfully to name his discovery
+              Georgium Sidus after King George III. Instead, the planet was
+              named for Uranus, the Greek god of the sky, as suggested by Johann
+              Bode.
+            </p>
+          </div>
+
+          <div class="infobox">
+            <p>
+              Uranus' environment is not conducive to life as we know it. The
+              temperatures, pressures, and materials that characterize this
+              planet are most likely too extreme and volatile for organisms to
+              adapt to.
+            </p>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
+
+    <section class="video">
+      <div class="uranus-video-title">
+        <h2>Video about Uranus</h2>
+      </div>
+      <div class="video-container">
+        <iframe
+          id="scroll2"
+          class="video-frame"
+          src="video/uranusvideo.mp4"
+          frameborder="1"
+        ></iframe>
+      </div>
+    </section>
   </body>
 </html>
