@@ -1,39 +1,58 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 html {
-    font-size: 1rem;
-
+  font-size: 1rem;
 }
 
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f6f8;
-  color: #222222;
+  color: #000001;
   line-height: 1.5;
 }
 
 .header {
-    padding: 13px;
-    background-color: #1E293B; 
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    justify-content:space-evenly;
+  padding: 13px;
+  background-color: #1e293b;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
 }
 
 .header-text {
-    color: #f4f6f8;
-    text-decoration: none;
+  color: #f4f6f8;
+  text-decoration: none;
 }
 
 .header-icon {
-    max-width: 40px;
-    max-height: 40px;
-    display: block;
+  max-width: 40px;
+  max-height: 40px;
+  display: block;
+}
 
+.hero {
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("images/uranus.jpg");
+  background-size: contain;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.hero-content {
+    background: black;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    align-items: center;
 }
