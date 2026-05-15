@@ -48,7 +48,7 @@ body {
     url("images/uranus.jpg");
   background-size: contain;
   background-position: center;
-  height: 100vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,6 +95,8 @@ body {
   background-color: #1e293b;
   padding: 30px;
   color: #f4f6f8;
+  border-radius: 30px;
+  border: #7dd3fc solid 3px;
 }
 
 .uranus-video-title h2 {
@@ -125,3 +127,4 @@ body {
     margin-left: auto;
     margin-right: auto;
 }
+
