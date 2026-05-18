@@ -128,7 +128,24 @@ body {
   margin-left: auto;
   margin-right: auto;
 }
-
 .uranusfactpicture {
-width: fit-content;
+  width: 100%;       
+  max-width: 700px;  
+  margin: 0 auto;    
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #1e293b;
+  padding: 20px;
+  border-radius: 30px;
+  border: #7dd3fc solid 3px;
+}
+
+
+.uranusfactpicture img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 15px;
 }
