@@ -7,7 +7,7 @@
 html {
   font-size: 1rem;
   scroll-behavior: smooth;
- 
+  scroll-padding-top: 100px;
 }
 
 body {
@@ -23,12 +23,9 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
   z-index: 1000;
+  position: fixed;
+  width: 100%;
 }
 
 .header-text {
@@ -46,24 +43,27 @@ body {
   background-image:
     linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("images/uranus.jpg");
-  background-size: contain;
-  background-position: center;
   height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
   color: white;
+  z-index: 10;
 }
 
 .hero-content {
   position: sticky;
-  top: 50%;
+  top: 70px;
   padding: 15px;
   display: flex;
   flex-direction: column;
   border-radius: 30px;
   align-items: center;
   overflow: hidden;
+  /* z-index: 1; */
 }
 
 .content-container {
@@ -92,6 +92,8 @@ body {
 .infobox {
   flex: 1;
   display: flex;
+  align-items: center;
+  justify-content: center;
   background-color: #1e293b;
   padding: 30px;
   color: #f4f6f8;
@@ -100,11 +102,11 @@ body {
 }
 
 .uranus-video-title h2 {
-    color: #f4f6f8; 
-    font-size: 2rem;
-    text-align: center;
-    margin-bottom: 20px; 
-    margin-top: 40px;    
+  color: #f4f6f8;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
 }
 
 .video-container {
@@ -115,16 +117,18 @@ body {
   max-width: 800px;
   aspect-ratio: 16 / 9;
   margin: 30px auto;
-
 }
 
 .video-frame {
   width: 100%;
-    height: 100%;
-    border-radius: 15px;   
-    border: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  height: 100%;
+  border-radius: 15px;
+  border: none;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.uranusfactpicture {
+width: fit-content;
+}
