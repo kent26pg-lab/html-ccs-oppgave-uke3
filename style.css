@@ -63,7 +63,7 @@ body {
   border-radius: 30px;
   align-items: center;
   overflow: hidden;
-  /* z-index: 1; */
+  z-index: 1;
 }
 
 .content-container {
@@ -127,6 +127,10 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+    background-color: #1e293b;
+  padding: 20px;
+  border-radius: 30px;
+  border: #7dd3fc solid 3px;
 }
 .uranusfactpicture {
   width: 100%;       
