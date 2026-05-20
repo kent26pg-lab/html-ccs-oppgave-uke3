@@ -144,6 +144,7 @@ body {
   padding: 20px;
   border-radius: 30px;
   border: #7dd3fc solid 3px;
+  
 }
 
 
@@ -152,4 +153,17 @@ body {
   height: auto;
   display: block;
   border-radius: 15px;
+  
+}
+
+footer {
+  display: flex;
+  padding: 6px;
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  background-color: #1e293b;
+  color: #f4f6f8;
+  text-decoration: none;
+
 }
