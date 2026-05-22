@@ -3,21 +3,22 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+/* Her har jeg satt 1rem så at alle tekststørrelsene vil være 1rem vis jeg ikke spesifiserer noe annet og scroll-behavior:smooth gjør sånn at når man trykker på de forskjellige navene i headeren smooth. altså når den automatisk scroller ned til artiklene */
 html {
   font-size: 1rem;
   scroll-behavior: smooth;
-  scroll-padding-top: 100px;
 }
 
 body {
+  /* her har jeg satt font familyen til hele bodien til Arial og bakgrunnsfargen for hele siden utenom hero bilde og satt lineheight til 1.5 */
   font-family: Arial, sans-serif;
-  background-color: #000000;
+  background-color: #382f2f;
   line-height: 1.5;
 }
 
 .header {
-  padding: 13px;
+  /* Her har jeg satt styling for headeren og gjort at headeren alltid følger meg når man scroller nedover på nettsiden */
+  padding: 10px;
   background-color: #1e293b;
   text-decoration: none;
   display: flex;
@@ -29,69 +30,79 @@ body {
 }
 
 .header-text {
+  /* Her har jeg satt farge på teksten i headeren og gjort at det ikke er noe dekorasjon på teksten */
   color: #f4f6f8;
   text-decoration: none;
 }
 
 .header-icon {
+  /* her har jeg satt størrelsen på icon og gjør at den sentrer seg med headeren med display: block */
   max-width: 40px;
   max-height: 40px;
   display: block;
 }
 
 .hero {
-  background-image:
-    linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("images/uranus.jpg");
-  height: 90vh;
+  /* her har jeg satt hero bildet som bakgrunn og gjort at den ikke skal repeate seg vis mann besøker nettsiden fra andre pcer eller egentlig skjermer og satt bakgrunnsfarge for der ikke bilde dekker til*/
+  background-image: url(images/uranus.jpg);
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  color: white;
-  z-index: 10;
+  background-color: #000000;
+  margin-bottom: 30px;
 }
 
 .hero-content {
-  position: sticky;
-  top: 70px;
-  padding: 15px;
+  /* Dette er for teksten inni heroen */
   display: flex;
   flex-direction: column;
-  border-radius: 30px;
   align-items: center;
-  overflow: hidden;
-  z-index: 1;
+  color: white;
+}
+.h1hero {
+  /* Dette er for h1 inni heroen */
+  font-size: 4rem;
+}
+.paragraph-hero {
+  /* Dette er for paragraphen inni heroen */
+  font-size: 1.5rem;
 }
 
 .content-container {
-  max-width: 1000px;
-  margin: 50px auto;
-  padding: 20px;
+  /* Her setter jeg h2 over info-wrapper*/
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
 .content-container h2 {
+  /* Her setter jeg font size og hvilken font family h2 skal være og gir den farge og hvor mye margin det skal være i bunn på den */
   font-size: 2rem;
   margin-bottom: 30px;
   color: #f4f6f8;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 .info-wrapper {
+  /* Her setter jeg de to info boksene vedsiden av hverandre og setter de i midten av siden og gjør at de ikke kan bli breddere en 600px har også satt 30px mellomrom mellom de */
   display: flex;
-  justify-content: space-evenly;
-  gap: 20px;
-  justify-content: center;
+  justify-content: space-around;
   max-width: 600px;
-  margin: auto;
-  gap: 50px;
+  margin: auto 0;
+  gap: 30px;
 }
 
 .infobox {
-  flex: 1;
+/* Her har jeg gitt styling til selve boksen og sentrert teksten i midten av boksen */
   display: flex;
+  flex: 1;
   align-items: center;
   justify-content: center;
   background-color: #1e293b;
@@ -102,68 +113,83 @@ body {
 }
 
 .uranus-video-title h2 {
+  /* her har jeg gitt styling til teksten over videoen */
   color: #f4f6f8;
   font-size: 2rem;
   text-align: center;
   margin-bottom: 20px;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .video-container {
+  /* her har jeg sentrert videoen i nettsiden og gitt den en spect ratio av 16/9 og gitt den margin 30px */
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
   max-width: 800px;
   aspect-ratio: 16 / 9;
   margin: 30px auto;
 }
 
 .video-frame {
+  /* Her har jeg gitt padding rundt selve videoen og gitt den farte også gitt den en border rundt som er solid på 3px har også gitt en borde radius på 20px */
   width: 100%;
   height: 100%;
   border-radius: 15px;
-  border: none;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-    background-color: #1e293b;
+  display: flex;
+  background-color: #1e293b;
   padding: 20px;
   border-radius: 30px;
   border: #7dd3fc solid 3px;
 }
-.uranusfactpicture {
-  width: 100%;       
-  max-width: 700px;  
-  margin: 0 auto;    
-  
+
+.picturetext {
+  /* dette er teksten over bilde på bunn */
   display: flex;
+  color: #f4f6f8;
+  margin: auto;
+  margin-top: 25px;
+}
+.uranusfactpicture {
+  /* dette er selve diven på bildet og her har jeg sentrert den og gitt den styling og margin  */
+  max-width: 700px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #1e293b;
   padding: 20px;
   border-radius: 30px;
   border: #7dd3fc solid 3px;
-  
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
-
 
 .uranusfactpicture img {
+  /* Her har jeg gjort at bildet tar 100 prosent av diven og gitt den en border radius */
   max-width: 100%;
   height: auto;
-  display: block;
   border-radius: 15px;
-  
 }
 
+
+
 footer {
+  /* Her har jeg sentrert innholdet i footeren og gitt bakgrunnsfarge og gitt teksen farge */
   display: flex;
   padding: 6px;
-  margin-top: 30px;
+  margin-top: 50px;
   align-items: center;
   justify-content: center;
   background-color: #1e293b;
   color: #f4f6f8;
   text-decoration: none;
+  gap: 5px;
+}
 
+a {
+  /* Her har jeg gitt anchor taggen i footeren blå farge og fjernet tekst dekorasjonen fra anchor taggen */
+  text-decoration: none;
+  color: #6366f1;
 }
