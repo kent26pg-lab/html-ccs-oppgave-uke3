@@ -147,6 +147,7 @@ body {
   /* dette er teksten over bilde på bunn */
   display: flex;
   color: #f4f6f8;
+  font-size: 2rem;
   margin: auto;
   margin-top: 25px;
 }
